@@ -1,0 +1,8 @@
+1 - Add Aluno com Nome, Email e id
+2 - Add Notas por Aluno, em cada nota ter nome da disciplina e sua respectiva nota
+2 - Mostrar todos os Alunos
+3 - Mostrar Notas de Aluno por Nome ou Email
+4 - Atualizar Nome, Email 
+5 - Atualizar Notas por Aluno e disciplina
+6 - Deletar Conta do Aluno
+7 - Deletar Nota por nome do Aluno e disciplina
