@@ -14,6 +14,9 @@ class UserController {
     const formData = req.body;
     formData.id = uuidv4();
     const user = DATABASE.users.find(x => x.id === userId); // Na verdade a variavel user é um marcador do usuario com id dentro do banco de dados (atribuicao por referencia)
+    if (!user.courses) {
+      user.courses = [];
+    }
     user.courses.push(formData); // Portanto esta atribuicao aponta para o banco de dados e a modificacao é feita no banco de dados e nao na constante user
 
     res.status(201).json(user);
@@ -61,5 +64,7 @@ class UserController {
     res.status(200).json(DATABASE.users);
   }
 }
+
+
 
 export default UserController; 
